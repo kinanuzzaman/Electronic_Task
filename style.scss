@@ -208,7 +208,11 @@ header {
         }
 
         @media (max-width: 480px) {
-          width: 250px;
+          width: 260px;
+        }
+
+        @media (max-width: 390px) {
+          width: 240px;
         }
       }
 
