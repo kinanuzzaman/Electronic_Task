@@ -1,21 +1,15 @@
-function openModal() {
-    document.getElementById('modalBackground').style.display = 'flex';
-}
-
-function closeModal() {
-    document.getElementById('modalBackground').style.display = 'none';
-}
-
-
+const modalBackground = document.getElementById('modalBackground');
+const pc = document.getElementById('pc');
+pc.addEventListener('click', () => {
+    modalBackground.style.display = 'flex';
+});
 
 document.addEventListener('DOMContentLoaded', () => {
-    const modalBackground = document.getElementById('modalBackground');
     modalBackground.addEventListener('click', (event) => {
         if (event.target === modalBackground) {
-            closeModal();
+            modalBackground.style.display = 'none';
         }
     });
-
 
     const toggleButton = document.getElementById('toggleButton');
     const closeSearch = document.getElementById('closeSearch');
